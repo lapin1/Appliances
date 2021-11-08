@@ -109,6 +109,21 @@ public class XMLApllianceParser {
                 appliances.add(speakers);
             }
 
+            for (Element vacuumCleanerEl : vacuumCleaners) {
+                VacuumCleaner vacuumCleaner = new VacuumCleaner();
+                vacuumCleaner.setCategory(VacuumCleaner.class.getSimpleName());
+                vacuumCleaner.setId(Integer.parseInt(vacuumCleanerEl.getAttributeValue("id")));
+                vacuumCleaner.setPrice(Double.parseDouble(vacuumCleanerEl.getChildText("price")));
+                vacuumCleaner.setFilterType(vacuumCleanerEl.getChildText("filter-type"));
+                vacuumCleaner.setBagType(vacuumCleanerEl.getChildText("bag-type"));
+                vacuumCleaner.setWandType(vacuumCleanerEl.getChildText("wand-type"));
+                vacuumCleaner.setMotorSpeedRegulation(vacuumCleanerEl.getChildText("motor-speed-regulation"));
+                vacuumCleaner.setCleaningWidth(Integer.parseInt(vacuumCleanerEl.getChildText("cleaning-width")));
+
+
+                appliances.add(vacuumCleaner);
+            }
+
 
 
         } catch (IOException e) {
