@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.org/appliances"
+        xmlns:tns="http://www.example.org/appliances">
+
+    <element name = "appliance">
+        <complexType>
+            <sequence>
+                <element name ="laptop" type="tns:Laptop" minOccurs="1" maxOccurs="unbounded"/>
+                <element name ="oven" type="tns:Oven" minOccurs="1" maxOccurs="unbounded"/>
+                <element name ="refrigerator" type="tns:Refrigerator" minOccurs="1" maxOccurs="unbounded"/>
+                <element name ="speakers" type="tns:Speakers" minOccurs="1" maxOccurs="unbounded"/>
+                <element name ="tablet-pc" type="tns:Tablet-PC" minOccurs="1" maxOccurs="unbounded"/>
+                <element name ="vacuum-cleaner" type="tns:Vacuum-Cleaner" minOccurs="1" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <complexType name="Laptop">
+        <sequence>
+            <element name="battery-capacity" type="int" />
+            <element name="price" type="string" />
+            <element name="os" type="string" />
+            <element name="memory-rom" type="int" />
+            <element name="system-memory" type="int" />
+            <element name="cpu" type="string" />
+            <element name="display-inches" type="double" />
+        </sequence>
+        <attribute name="id" type="int" use="required" />
+    </complexType>
+
+    <complexType name="Oven">
+        <sequence>
+            <element name="price" type="double" />
+            <element name="power-consumption" type="int" />
+            <element name="weight" type="int" />
+            <element name="capacity" type="int" />
+            <element name="depth" type="double" />
+            <element name="height" type="double" />
+            <element name="width" type="double" />
+        </sequence>
+        <attribute name="id" type="int" use="required" />
+    </complexType>
+
+    <complexType name="Refrigerator">
+        <sequence>
+            <element name="price" type="double" />
+            <element name="power-consumption" type="int" />
+            <element name="weight" type="int" />
+            <element name="freezer-capacity" type="int" />
+            <element name="overall-capacity" type="int" />
+            <element name="height" type="double" />
+            <element name="width" type="double" />
+        </sequence>
+        <attribute name="id" type="int" use="required" />
+    </complexType>
+
+    <complexType name="Speakers">
+        <sequence>
+            <element name="price" type="double" />
+            <element name="power-consumption" type="int" />
+            <element name="number-of-speakers" type="int" />
+            <element name="frequency-range" type="int" />
+            <element name="cord-length" type="double" />
+        </sequence>
+        <attribute name="id" type="int" use="required" />
+    </complexType>
+
+    <complexType name="Tablet-PC">
+        <sequence>
+            <element name="price" type="double" />
+            <element name="battery-capacity" type="int" />
+            <element name="display-inches" type="double" />
+            <element name="memory-rom" type="int" />
+            <element name="flash-memory-capacity" type="int" />
+            <element name="color" type="string" />
+        </sequence>
+        <attribute name="id" type="int" use="required" />
+    </complexType>
+
+    <complexType name="Vacuum-Cleaner">
+        <sequence>
+            <element name="price" type="double" />
+            <element name="power-consumption" type="int" />
+            <element name="filter-type" type="string" />
+            <element name="bag-type" type="string" />
+            <element name="wand-type" type="string" />
+            <element name="motor-speed-regulation" type="string" />
+            <element name="cleaning-width" type="int" />
+        </sequence>
+        <attribute name="id" type="int" use="required" />
+    </complexType>
+</schema>

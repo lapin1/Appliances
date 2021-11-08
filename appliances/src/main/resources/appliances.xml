@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tc:appliance xmlns:tc="http://www.example.org/appliances"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://www.example.org/appliance  appliances.xsd">
+
+    <laptop id = "1">
+        <battery-capacity>4800</battery-capacity>
+        <price>3000</price>
+        <os>macOS</os>
+        <memory-rom>8</memory-rom>
+        <system-memory>500</system-memory>
+        <cpu>apple silicon</cpu>
+        <display-inches>13.3</display-inches>
+    </laptop>
+    <laptop id = "2">
+        <battery-capacity>4000</battery-capacity>
+        <price>2000</price>
+        <os>Windows</os>
+        <memory-rom>4</memory-rom>
+        <system-memory>1000</system-memory>
+        <cpu>intel</cpu>
+        <display-inches>15.6</display-inches>
+    </laptop>
+    <laptop id = "3">
+        <battery-capacity>2500</battery-capacity>
+        <price>1000</price>
+        <os>Linux</os>
+        <memory-rom>16</memory-rom>
+        <system-memory>1000</system-memory>
+        <cpu>intel</cpu>
+        <display-inches>17.3</display-inches>
+    </laptop>
+    <oven id = "1">
+        <price>1000</price>
+        <power-consumption>1200</power-consumption>
+        <weight>10</weight>
+        <capacity>2300</capacity>
+        <depth>60</depth>
+        <height>40</height>
+        <width>50</width>
+    </oven>
+    <oven id = "2">
+        <price>1200</price>
+        <power-consumption>1400</power-consumption>
+        <weight>15</weight>
+        <capacity>2600</capacity>
+        <depth>70</depth>
+        <height>50</height>
+        <width>60</width>
+    </oven>
+    <oven id = "3">
+        <price>1700</price>
+        <power-consumption>1100</power-consumption>
+        <weight>16</weight>
+        <capacity>2700</capacity>
+        <depth>65</depth>
+        <height>50</height>
+        <width>40</width>
+    </oven>
+    <refrigerator id = "1">
+        <price>1200</price>
+        <power-consumption>5000</power-consumption>
+        <weight>60</weight>
+        <freezer-capacity>20</freezer-capacity>
+        <overall-capacity>100</overall-capacity>
+        <height>2.5</height>
+        <width>60</width>
+    </refrigerator>
+    <refrigerator id = "2">
+        <price>1400</price>
+        <power-consumption>4000</power-consumption>
+        <weight>50</weight>
+        <freezer-capacity>10</freezer-capacity>
+        <overall-capacity>50</overall-capacity>
+        <height>0.5</height>
+        <width>60</width>
+    </refrigerator>
+    <refrigerator id = "3">
+        <price>1600</price>
+        <power-consumption>7000</power-consumption>
+        <weight>80</weight>
+        <freezer-capacity>40</freezer-capacity>
+        <overall-capacity>120</overall-capacity>
+        <height>2</height>
+        <width>60</width>
+    </refrigerator>
+    <speakers id = "1">
+        <price>500</price>
+        <power-consumption>20</power-consumption>
+        <number-of-speakers>2</number-of-speakers>
+        <frequency-range>1</frequency-range>
+        <cord-length>2</cord-length>
+    </speakers>
+    <speakers id = "2">
+        <price>300</price>
+        <power-consumption>10</power-consumption>
+        <number-of-speakers>2</number-of-speakers>
+        <frequency-range>2</frequency-range>
+        <cord-length>1</cord-length>
+    </speakers>
+    <speakers id = "3">
+        <price>400</price>
+        <power-consumption>40</power-consumption>
+        <number-of-speakers>3</number-of-speakers>
+        <frequency-range>3</frequency-range>
+        <cord-length>1</cord-length>
+    </speakers>
+    <tablet-pc id = "1">
+        <price>1000</price>
+        <battery-capacity>4000</battery-capacity>
+        <display-inches>8.3</display-inches>
+        <memory-rom>4</memory-rom>
+        <flash-memory-capacity>32</flash-memory-capacity>
+        <color>black</color>
+    </tablet-pc>
+    <tablet-pc id = "2">
+        <price>1900</price>
+        <battery-capacity>3000</battery-capacity>
+        <display-inches>11.2</display-inches>
+        <memory-rom>6</memory-rom>
+        <flash-memory-capacity>128</flash-memory-capacity>
+        <color>green</color>
+    </tablet-pc>
+    <tablet-pc id = "3">
+        <price>950</price>
+        <battery-capacity>2000</battery-capacity>
+        <display-inches>7.9</display-inches>
+        <memory-rom>2</memory-rom>
+        <flash-memory-capacity>16</flash-memory-capacity>
+        <color>red</color>
+    </tablet-pc>
+    <vacuum-cleaner id = "1">
+        <price>700</price>
+        <power-consumption>1200</power-consumption>
+        <filter-type>hepa</filter-type>
+        <bag-type>cotton</bag-type>
+        <wand-type>pipe</wand-type>
+        <motor-speed-regulation>wheel</motor-speed-regulation>
+        <cleaning-width>25</cleaning-width>
+    </vacuum-cleaner>
+    <vacuum-cleaner id = "2">
+        <price>800</price>
+        <power-consumption>1400</power-consumption>
+        <filter-type>water filter</filter-type>
+        <bag-type>no bag</bag-type>
+        <wand-type>pipe</wand-type>
+        <motor-speed-regulation>buttons</motor-speed-regulation>
+        <cleaning-width>20</cleaning-width>
+    </vacuum-cleaner>
+    <vacuum-cleaner id = "3">
+        <price>900</price>
+        <power-consumption>1600</power-consumption>
+        <filter-type>water</filter-type>
+        <bag-type>cotton</bag-type>
+        <wand-type>pipe</wand-type>
+        <motor-speed-regulation>no regulation</motor-speed-regulation>
+        <cleaning-width>30</cleaning-width>
+    </vacuum-cleaner>
+</tc:appliance>
