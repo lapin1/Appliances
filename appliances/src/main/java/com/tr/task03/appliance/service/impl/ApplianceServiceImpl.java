@@ -4,7 +4,10 @@ import com.tr.task03.appliance.bean.criteria.Criteria;
 import com.tr.task03.appliance.dao.ApplianceDAO;
 import com.tr.task03.appliance.dao.DAOFactory;
 import com.tr.task03.appliance.service.ApplianceService;
+import com.tr.task03.appliance.service.validation.Validator;
+import org.jdom2.JDOMException;
 
+import java.io.IOException;
 import java.util.List;
 
 public class ApplianceServiceImpl implements ApplianceService {
@@ -13,7 +16,10 @@ public class ApplianceServiceImpl implements ApplianceService {
 
 
     @Override
-    public List<String> find(Criteria criteria) {
+    public List<String> find(Criteria criteria) throws IOException, JDOMException {
+        if (!Validator.criteriaValidator()) {
+            return null;
+        }
 
         ApplianceDAO appliance = factory.getApplianceDAO();
         List<String> result = appliance.find(criteria);
