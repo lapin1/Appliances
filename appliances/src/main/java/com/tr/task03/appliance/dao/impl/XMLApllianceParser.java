@@ -1,6 +1,6 @@
 package com.tr.task03.appliance.dao.impl;
 
-import com.tr.task03.appliance.Main;
+import com.tr.task03.appliance.main.Main;
 import com.tr.task03.appliance.bean.*;
 import org.jdom2.Document;
 import org.jdom2.Element;

@@ -4,7 +4,7 @@ import com.tr.task03.appliance.bean.criteria.Criteria;
 
 import java.util.List;
 
-public interface ApplianceSourceDAO {
+public interface ApplianceDAO {
     List<String> find(Criteria criteria);
 
 }

@@ -40,13 +40,6 @@ public class Searcher {
             }
         }
 
-
-        for (String param : params) {
-            System.out.println(param);
-        }            //just show parameters
-
-
-
         return found;
     }
 

@@ -1,15 +1,17 @@
-package com.tr.task03.appliance;
+package com.tr.task03.appliance.main;
 
 import com.tr.task03.appliance.bean.Laptop;
 import com.tr.task03.appliance.bean.Oven;
-import com.tr.task03.appliance.dao.impl.XMLApplianceDAO;
 import com.tr.task03.appliance.bean.criteria.Criteria;
+import com.tr.task03.appliance.service.ApplianceService;
+import com.tr.task03.appliance.service.ServiceFactory;
 
 
 public class Main {
     public static void main(String[] args) {
 
-        XMLApplianceDAO finder = new XMLApplianceDAO();
+        ServiceFactory factory = ServiceFactory.getInstance();
+        ApplianceService service = factory.getApplianceService();
 
 
        Criteria criteria = new Criteria(Oven.class.getSimpleName());
@@ -17,22 +19,22 @@ public class Main {
        criteria.add("weight", 10);
 
 
-       //finder.find(criteria);
+       //service.find(criteria);
 
-       System.out.println(finder.find(criteria));    // printFoundInfo - просто посмотреть
+       System.out.println(service.find(criteria));    // printFoundInfo - просто посмотреть
 
        ////////////////////////////////////////////////////////////////
 
        Criteria criteria2 = new Criteria();
        criteria2.add("price","1000");
 
-       finder.find(criteria2);
+       service.find(criteria2);
 
         ////////////////////////////////////////////////////////////////
 
        Criteria criteria3 = new Criteria(Laptop.class.getSimpleName());   //show laptops
 
-       finder.find(criteria3);
+       service.find(criteria3);
 
         ////////////////////////////////////////////////////////////////
 
