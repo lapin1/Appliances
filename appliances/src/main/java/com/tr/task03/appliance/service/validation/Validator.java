@@ -14,7 +14,7 @@ public class Validator {
     public static boolean criteriaValidator() throws IOException, JDOMException {
         SAXBuilder builder = new SAXBuilder(XMLReaders.XSDVALIDATING);
         Document document = builder.build(FILE_NAME);
-        
+        //System.out.println("Root: " + document.getRootElement().getName());
         return true;
     }
 

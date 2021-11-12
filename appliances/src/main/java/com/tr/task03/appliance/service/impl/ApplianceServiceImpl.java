@@ -16,11 +16,11 @@ public class ApplianceServiceImpl implements ApplianceService {
 
 
     @Override
-    public List<String> find(Criteria criteria) throws IOException, JDOMException {
-        try{
-            Validator.criteriaValidator();
+    public List<String> find(Criteria criteria) {
+        try {
+            Validator.criteriaValidator(criteria);
         }catch (RuntimeException e){
-            System.out.println(e.getMessage());
+            e.getMessage();
         }
 
         ApplianceDAO appliance = factory.getApplianceDAO();

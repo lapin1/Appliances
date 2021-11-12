@@ -36,4 +36,11 @@ public class Criteria {
         return params.get(i);
     }
 
+    public boolean validator() {
+        if(params.isEmpty()) {
+            throw new RuntimeException();
+        }
+        return true;
+    }
+
 }
