@@ -10,7 +10,6 @@ import org.jdom2.input.sax.XMLReaders;
 import java.io.IOException;
 
 public class Validator {
-    private static final String FILE_NAME = Main.class.getClassLoader().getResource("appliances.xml").toString();
 
     public static boolean criteriaValidator(Criteria criteria){
         return criteria.validator();
